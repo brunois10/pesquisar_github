@@ -1,0 +1,126 @@
+:root {
+    --header-color: #01a3a4;
+    --bg-color: #eee;
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        width: 100%;
+    }
+}
+
+header {
+    background-color: var(--header-color);
+    text-align: center;
+    height: 30vh;
+}
+
+header .container {
+    position: relative;
+    bottom: -50%;
+    color: #fff;
+}
+
+.profile-avatar {
+    border-radius: 50%;
+    margin-bottom: 24px;
+    width: 180px;
+    height: 180px;
+}
+
+.profile-name {
+    font-size: 2em;
+}
+
+.profile-username {
+    margin: 16px 0 32px;
+    font-size: 1.1em;
+}
+
+.profile-link {
+    background-color: var(--header-color);
+    color: var(--bg-color);
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 24px;
+    text-decoration: none;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.numbers-item {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 8px 16px;
+    color: #fff;
+    max-width: 1024px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    text-transform: uppercase;
+    font-size: 14px;
+    max-width: 100%;
+}
+
+input {
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 32px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ffffff;
+    background: #01a3a4;
+    border: 1px solid #01a3a4;
+}
